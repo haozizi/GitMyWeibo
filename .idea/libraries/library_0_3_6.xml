@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="library-0.3.6">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.marshalchen.ultimaterecyclerview/library/0.3.6/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.marshalchen.ultimaterecyclerview/library/0.3.6/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.marshalchen.ultimaterecyclerview/library/0.3.6/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.marshalchen.ultimaterecyclerview/library/0.3.6/768be88165188d725e4512939ad3be12996a0877/library-0.3.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
