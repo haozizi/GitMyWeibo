@@ -8,9 +8,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
 
+import com.lianghao.myweibo.*;
 import com.lianghao.myweibo.Datas.Constant;
-import com.lianghao.myweibo.MainActivity;
-import com.lianghao.myweibo.R;
 
 /**
  * Created by Administrator on 2015/12/17.
@@ -23,6 +22,7 @@ public class StartActivity extends Activity {
             switch (msg.what){
                 case 1:
                     startActivity(new Intent(StartActivity.this, MainActivity.class));
+                    //startActivity(new Intent(StartActivity.this, com.lianghao.myweibo.Activity.MainActivity.class));
                     finish();
                     break;
                 case 2:

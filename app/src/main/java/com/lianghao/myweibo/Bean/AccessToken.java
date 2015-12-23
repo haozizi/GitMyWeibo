@@ -1,4 +1,4 @@
-package com.lianghao.myweibo.Domain;
+package com.lianghao.myweibo.Bean;
 
 /**
  * Created by Administrator on 2015/12/17.

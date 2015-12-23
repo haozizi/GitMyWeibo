@@ -1,6 +1,7 @@
 package com.lianghao.myweibo.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,7 +19,8 @@ import android.widget.RelativeLayout;
 import com.google.gson.Gson;
 import com.lianghao.myweibo.Datas.Constant;
 import com.lianghao.myweibo.Datas.WeiboData;
-import com.lianghao.myweibo.Domain.AccessToken;
+import com.lianghao.myweibo.Bean.AccessToken;
+import com.lianghao.myweibo.MainActivity;
 import com.lianghao.myweibo.Utils.LogUtil;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.marshalchen.common.commonUtils.urlUtils.HttpUtilsAsync;
@@ -54,6 +56,8 @@ public class AuthorizeFragment extends Fragment{
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                         LogUtil.i("result:" + new String(responseBody));
                         saveAccessToken(responseBody);
+                        startActivity(new Intent(getActivity(), MainActivity.class));
+                        getActivity().finish();
                     }
 
                     @Override
@@ -61,7 +65,7 @@ public class AuthorizeFragment extends Fragment{
 
                     }
                 });
-                return false;
+                return true;
             }
         });
     }

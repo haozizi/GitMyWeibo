@@ -5,11 +5,11 @@ package com.lianghao.myweibo.Datas;
  */
 public class WeiboData {
 
-    private static final String APP_KEY = "2672051258";
-    public static final String APP_SECRET = "bc6c91be7de708c8a8425b3b3202f4a4";
+//    private static final String APP_KEY = "2672051258";
+//    public static final String APP_SECRET = "bc6c91be7de708c8a8425b3b3202f4a4";
 
-//    public static final String APP_KEY = "3195288873";
-//    public static final String APP_SECRET = "f0bbaad564233b470d8f2850c08069cf";
+    public static final String APP_KEY = "3195288873";
+    public static final String APP_SECRET = "f0bbaad564233b470d8f2850c08069cf";
 
     /**
      * 授权回调页
