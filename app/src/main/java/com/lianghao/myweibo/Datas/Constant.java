@@ -17,4 +17,6 @@ public class Constant {
     public static final String EXPIRES_IN = "expires_in";
 
     public static final String AT = MyApp.getAccessToken().getAccess_token();
+
+    public static final String USER_UID =MyApp.getAccessToken().getUid();
 }

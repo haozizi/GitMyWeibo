@@ -21,6 +21,7 @@ import com.lianghao.myweibo.Datas.Constant;
 import com.lianghao.myweibo.Datas.WeiboData;
 import com.lianghao.myweibo.Bean.AccessToken;
 import com.lianghao.myweibo.MainActivity;
+import com.lianghao.myweibo.MyApp;
 import com.lianghao.myweibo.Utils.LogUtil;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.marshalchen.common.commonUtils.urlUtils.HttpUtilsAsync;
@@ -106,5 +107,7 @@ public class AuthorizeFragment extends Fragment{
         editor.putString(Constant.EXPIRES_IN,accessToken.getExpires_in());
         editor.putString(Constant.ACCESS_TOKEN,accessToken.getAccess_token());
         editor.commit();
+        //第一次登陆时对全局token赋值
+        MyApp.getAccessToken().setAccess_token(accessToken.getAccess_token());
     }
 }

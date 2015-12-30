@@ -22,7 +22,7 @@ public class StartActivity extends Activity {
             switch (msg.what){
                 case 1:
                     startActivity(new Intent(StartActivity.this, MainActivity.class));
-                    //startActivity(new Intent(StartActivity.this, com.lianghao.myweibo.Activity.MainActivity.class));
+                    //startActivity(new Intent(StartActivity.this, MyActivity.class));
                     finish();
                     break;
                 case 2:

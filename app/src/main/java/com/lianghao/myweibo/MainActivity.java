@@ -1,6 +1,7 @@
 package com.lianghao.myweibo;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -43,6 +44,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     DrawerLayout drawerlayout;
     @InjectView(R.id.click_menuButton)
     ImageView clickMenuButton;
+    @InjectView(R.id.title)
+    TextView title;
     private ViewPager viewPager;
 
     private List<ImageView> imageViews = new ArrayList<>();
@@ -53,6 +56,11 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private DiscoverFragment discoverFragment = new DiscoverFragment();
     private MeFragment meFragment = new MeFragment();
 
+    public static Handler handler = new Handler();
+
+    public static Handler getHandler() {
+        return handler;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,14 +106,17 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 int[] imageIds = initImageIds();
                 switch (position) {
                     case 0:
+                        title.setText("首页");
                         imageIds[0] = R.drawable.home_selected;
                         setTextColor(homePagerText, discoverText, meText);
                         break;
                     case 1:
+                        title.setText("发现");
                         imageIds[1] = R.drawable.discover_selected;
                         setTextColor(discoverText, homePagerText, meText);
                         break;
                     case 2:
+                        title.setText("我的");
                         imageIds[2] = R.drawable.me_selected;
                         setTextColor(meText, discoverText, homePagerText);
                         break;
@@ -132,16 +143,19 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         int[] imageIds = initImageIds();
         switch (v.getId()) {
             case R.id.home_pager_image:
+                title.setText("首页");
                 setTextColor(homePagerText, discoverText, meText);
                 imageIds[0] = R.drawable.home_selected;
                 index = 0;
                 break;
             case R.id.discover_image:
+                title.setText("发现");
                 setTextColor(discoverText, homePagerText, meText);
                 imageIds[1] = R.drawable.discover_selected;
                 index = 1;
                 break;
             case R.id.me_image:
+                title.setText("我的");
                 setTextColor(meText, discoverText, homePagerText);
                 imageIds[2] = R.drawable.me_selected;
                 index = 2;

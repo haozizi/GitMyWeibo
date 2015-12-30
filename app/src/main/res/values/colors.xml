@@ -8,4 +8,5 @@
     <color name="bottomTextColor">#6D6E6E</color>
     <color name="bottomTextColorSelected">#EA5A17</color>
     <color name="orangeTextColor">#EA5A17</color>
+    <color name="light_line">#29000000</color>
 </resources>

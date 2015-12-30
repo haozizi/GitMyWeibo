@@ -1,5 +1,7 @@
 package com.lianghao.myweibo.Bean;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2015/12/18.
  */
@@ -30,6 +32,8 @@ public class Weibo {
     private int comments_count;    //评论数
 
     private int attitudes_count;//表态数
+
+    private List<Object> pic_urls;//图片url
 
     private User user;    //object	微博作者的用户信息字段
 
@@ -95,6 +99,10 @@ public class Weibo {
         return retweeted_status;
     }
 
+    public List<Object> getPic_urls() {
+        return pic_urls;
+    }
+
     @Override
     public String toString() {
         return "创建时间：" + getCreated_at() +
@@ -104,4 +112,12 @@ public class Weibo {
                 "表态数:" + getAttitudes_count() +
                 getText();
     }
+
+//    class UrlObject {
+//
+//        @Override
+//        public String toString() {
+//            return super.toString();
+//        }
+//    }
 }

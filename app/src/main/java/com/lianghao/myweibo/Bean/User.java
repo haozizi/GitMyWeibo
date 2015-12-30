@@ -137,6 +137,94 @@ public class User {
         return lang;
     }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setIdstr(String idstr) {
+        this.idstr = idstr;
+    }
+
+    public void setScreen_name(String screen_name) {
+        this.screen_name = screen_name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setProvince(int province) {
+        this.province = province;
+    }
+
+    public void setCity(int city) {
+        this.city = city;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public void setProfile_image_url(String profile_image_url) {
+        this.profile_image_url = profile_image_url;
+    }
+
+    public void setProfile_url(String profile_url) {
+        this.profile_url = profile_url;
+    }
+
+    public void setDomain(String domain) {
+        this.domain = domain;
+    }
+
+    public void setWeihao(String weihao) {
+        this.weihao = weihao;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setFollowers_count(int followers_count) {
+        this.followers_count = followers_count;
+    }
+
+    public void setFriends_count(int friends_count) {
+        this.friends_count = friends_count;
+    }
+
+    public void setStatuses_count(int statuses_count) {
+        this.statuses_count = statuses_count;
+    }
+
+    public void setFavourites_count(int favourites_count) {
+        this.favourites_count = favourites_count;
+    }
+
+    public void setCreated_at(String created_at) {
+        this.created_at = created_at;
+    }
+
+    public void setAvatar_large(String avatar_large) {
+        this.avatar_large = avatar_large;
+    }
+
+    public void setAvatar_hd(String avatar_hd) {
+        this.avatar_hd = avatar_hd;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
+    }
+
     @Override
     public String toString() {
         return "用户ID:"+getId()+
